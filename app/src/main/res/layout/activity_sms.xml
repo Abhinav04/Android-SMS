@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".SMS"
+    android:orientation="vertical"
+    android:id="@+id/view"
+    >
+
+   <RelativeLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+           android:id="@+id/num"/>
+       <EditText
+           android:layout_below="@+id/num"
+           android:id="@+id/sms"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:hint="Enter a message"
+
+           />
+       <Button
+           android:text="Send"
+           android:layout_below="@+id/num"
+           android:layout_toRightOf="@+id/sms"
+           android:id="@+id/send"
+           android:layout_width="75dp"
+           android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+
+</LinearLayout>
